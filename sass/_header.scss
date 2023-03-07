@@ -1,0 +1,99 @@
+.header {
+  @media only screen and (max-width: $md-tablet) {
+    font-size: 1rem;
+  }
+  @media only screen and (max-width: $md-mobile-s) {
+    font-size: 8px;
+  }
+
+  &__top {
+    background-color: $color-grey-light;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 1rem 1rem 1rem;
+    @media only screen and (max-width: $md-mobile-l) {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    &-one {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      &-1::after {
+        position: absolute;
+        content: "";
+        height: 2.5rem;
+        width: 0.5px;
+        top: 0;
+        left: 8rem;
+        background-color: $color-header;
+        @media only screen and (max-width: $md-tablet) {
+          left: 7rem;
+          height: 3rem;
+        }
+        @media only screen and (max-width: $md-mobile-s) {
+          height: 3rem;
+          left: 6rem;
+        }
+      }
+
+      &-2 {
+        @media only screen and (max-width: $md-tablet) {
+          gap: 0;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      @media only screen and (max-width: $md-tablet) {
+        gap: 2rem;
+      }
+    }
+    &-two {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      span {
+        padding: 5px;
+        background-color: $color-hero;
+      }
+      span:last-child {
+        color: $color-hero;
+        background-color: black;
+      }
+      @media only screen and (max-width: $md-tablet) {
+        gap: 0;
+      }
+    }
+  }
+
+  &__images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 4rem 0;
+    @media only screen and (max-width: $md-mobile-l) {
+      margin: 2rem;
+    }
+    @media only screen and (max-width: $md-mobile-s) {
+      gap: 2rem;
+      margin: 1rem 0;
+    }
+    &-1 {
+      @media only screen and (max-width: $md-tablet) {
+        height: 5rem;
+        width: 15rem;
+      }
+      @media only screen and (max-width: $md-mobile-l) {
+        height: 4rem;
+        width: 10rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+.heading {
+  color: $color-hero;
+  // padding: 0 20rem;
+
+  &__white {
+    // padding: 5rem;
+    &-sec {
+      font-size: 3.2rem;
+      font-weight: bold;
+      text-align: center;
+      @media only screen and (max-width: $md-mobile-l) {
+        font-size: 2.2rem;
+      }
+    }
+    &-secdesc {
+      font-size: 1.6rem;
+      // padding: 0 20rem;
+      line-height: 1.5;
+      text-align: center;
+      @media only screen and (max-width: $md-tablet) {
+        font-size: 1.2rem;
+      }
+      @media only screen and (max-width: $md-mobile-l) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &__primary {
+    font-size: 50px;
+    font-weight: 700;
+    @media only screen and (max-width: $md-tablet) {
+      font-size: 30px;
+    }
+    @media only screen and (max-width: $md-mobile-s) {
+      font-size: 24px;
+    }
+    &-desc {
+      font-size: 1.6rem;
+      line-height: 1.5;
+      @media only screen and (max-width: $md-tablet) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &__no {
+    font-size: 2.4rem;
+    @media only screen and (max-width: $md-mobile-s) {
+      font-size: 1.6rem;
+    }
+  }
+  &__sec {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: $color-primary-heading;
+    text-align: center;
+    @media only screen and (max-width: $md-mobile-l) {
+      font-size: 2.2rem;
+    }
+    &-desc {
+      font-size: 1.6rem;
+      color: $color-secondary;
+      // padding: 0 20rem;
+      line-height: 1.5;
+      text-align: center;
+      @media only screen and (max-width: $md-tablet) {
+        font-size: 1.2rem;
+      }
+      @media only screen and (max-width: $md-mobile-l) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+.h-all {
+  padding: 0 10rem;
+  @media only screen and (max-width: $md-laptop) {
+  }
+  @media only screen and (max-width: $md-tablet) {
+    padding: 0;
+  }
+  @media only screen and (max-width: $md-mobile-l) {
+    padding: 0 2rem;
+  }
+}
+.h-lf {
+  text-align: left;
+  z-index: 100;
+  @media only screen and (max-width: $md-mobile-l) {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}

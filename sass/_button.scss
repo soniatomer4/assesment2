@@ -1,0 +1,18 @@
+.btn {
+  color: #4365f1;
+  font-size: 1.6rem;
+  background-color: $color-hero;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  transition: all 0.2s;
+  @media only screen and (max-width: $md-mobile-s) {
+    margin-right: 7rem;
+  }
+  &:hover {
+    background-color: $color-grey-light;
+    color: #333;
+    transform: translateY(0.5rem);
+  }
+}

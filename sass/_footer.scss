@@ -1,0 +1,60 @@
+.footer {
+  font-size: 1.4rem;
+  color: $color-hero;
+  text-align: center;
+  @media only screen and (max-width: $md-tablet) {
+    font-size: 1rem;
+  }
+  &__top {
+    background-color: $color-footer-light;
+    display: block;
+    padding: 1rem;
+  }
+  &__bottom {
+    background-color: $color-footer-dark;
+    display: flex;
+    flex-direction: column;
+
+    &-content {
+      padding: 2rem 25rem;
+      @media only screen and (max-width: $md-tablet) {
+        padding: 1rem 20rem;
+      }
+      @media only screen and (max-width: $md-mobile-l) {
+        padding: 2rem;
+      }
+    }
+    &-last {
+    }
+    &-img {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 4rem;
+      margin-top: 2rem;
+    }
+  }
+  &__img {
+    &-1,
+    &-2,
+    &-3 {
+      height: 6rem;
+      width: 18rem;
+      @media only screen and (max-width: $md-tablet) {
+        height: 5rem;
+        width: 15rem;
+      }
+      @media only screen and (max-width: $md-mobile-l) {
+        height: 3rem;
+        width: 10rem;
+      }
+    }
+  }
+}
+.line {
+  @media only screen and (max-width: $md-mobile-s) {
+    height: 0;
+  }
+}

@@ -1,0 +1,83 @@
+$font-primary: "Poppins", sans-serif;
+$color-primary-heading: #000000;
+$color-secondary: #575757;
+$color-header: #3a3a3a;
+$color-hero: #ffffff;
+$color-tertiary-light: #8f8f8f;
+$color-tertiary-dark: #414141;
+$color-grey-light: #f3f3f3;
+$color-footer-light: #2a2a2a;
+$color-footer-dark: #0c0c0c;
+
+//mediaqueries
+$md-laptop: 64em;
+$md-tablet: 48em;
+$md-mobile-l: 27em;
+$md-mobile-m: 24em;
+$md-mobile-s: 20em;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  // box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  font-family: $font-primary;
+  color: $color-secondary;
+  // font-weight: 300;
+  line-height: 1.6;
+}
+
+.scroll {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  &-icon {
+    height: 6rem;
+    width: 5rem;
+    @media only screen and (max-width: $md-mobile-l) {
+      height: 4rem;
+      width: 3rem;
+    }
+    @media only screen and (max-width: $md-mobile-s) {
+      height: 3rem;
+      width: 2rem;
+    }
+  }
+}
+.container {
+  // padding: 0 15rem;
+  margin: 0 auto;
+}
+.header {
+  color: $color-header;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.hero {
+  font-size: 1.6rem;
+  width: auto;
+  padding: 2rem 0;
+  color: $color-hero;
+  background-color: #4769f1;
+  @media only screen and (max-width: $md-tablet) {
+    font-size: 1.2rem;
+  }
+  @media only screen and (max-width: $md-mobile-s) {
+    font-size: 1rem;
+  }
+}
+.card {
+  // height: 60vh;
+  background-color: $color-hero;
+  // padding: 0 9rem;
+}
+.feature {
+  background-color: #4769f1;
+  color: #ffffff;
+}
