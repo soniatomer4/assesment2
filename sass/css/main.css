@@ -628,6 +628,7 @@ body {
   border-radius: 2px;
   border: 1px solid #f3f3f3;
   padding: 2rem 5rem;
+  transition: all 0.2s;
 }
 @media only screen and (max-width: 48em) {
   .card__item {
@@ -878,6 +879,7 @@ ul::before {
   gap: 2rem;
   border-radius: 4px;
   padding: 2rem 1rem;
+  transition: all 0.2s;
 }
 @media only screen and (max-width: 48em) {
   .feature__box {
@@ -934,6 +936,9 @@ ul::before {
     padding: 2rem 3rem;
   }
 }
+.fqa__box:hover {
+  box-shadow: 10px 10px 10px 10px rgb(214, 212, 212);
+}
 .fqa__bg-1 {
   width: 100%;
   height: 90%;
@@ -950,10 +955,6 @@ ul::before {
   border-radius: 2rem;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
   border-radius: 2rem;
-}
-.fqa__acc:hover {
-  box-shadow: 10px 10px 10px 10px rgb(169, 167, 167);
-  transform: translateY(1rem);
 }
 
 .accordion {
